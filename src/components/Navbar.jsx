@@ -19,7 +19,7 @@ const Navbar = ({ user }) => {
           <li className='listItem'>Logout</li>
         </ul>
       ) : (
-        <Link className='link' to='/'>
+        <Link className='link' to='Login'>
           Login
         </Link>
       )}
