@@ -1,0 +1,27 @@
+{
+  "name": "backendforauthlogin",
+  "version": "1.0.0",
+  "description": "Backend for our cliend side done alread using react for  Auth Login",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericmaniraguha/react-social-login-google-fb-github.git"
+  },
+  "author": "Eric Maniraguha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericmaniraguha/react-social-login-google-fb-github/issues"
+  },
+  "homepage": "https://github.com/ericmaniraguha/react-social-login-google-fb-github#readme",
+  "dependencies": {
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
