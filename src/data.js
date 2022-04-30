@@ -1,13 +1,9 @@
-import basketball from './asset/imagesBasket/basketball.png';
-import basketball01 from './asset/imagesBasket/basketball01.png';
-import basketball02 from './asset/imagesBasket/basketball02.png';
-
 export const posts = [
   {
     id: 1,
     title:
       'Sports fans will love our huge selection of basketball games. You can play quick arcade challenges or in-depth simulation challenges.',
-    img: { basketball },
+    img: 'https://cdn.pixabay.com/photo/2017/04/25/05/45/basketball-2258651_960_720.jpg',
     desc: 'Sports fans will love our huge selection of basketball games. You can play quick arcade challenges or in-depth simulation challenges. Choose your favorite court, pick a player, and get ready to shoot some hoops! Our collection puts you in control of star NBA players, streetball athletes, and newbies. You’ll be challenged to make 3-pointers, score huge slam dunks, and beat your opponents in 4 quarters. Exciting sports challenges are waiting for you!',
 
     longDesc:
@@ -17,7 +13,7 @@ export const posts = [
     id: 1,
     title:
       'Sports fans will love our huge selection of basketball games. You can play quick arcade challenges or in-depth simulation challenges.',
-    img: { basketball01 },
+    img: 'https://cdn.pixabay.com/photo/2013/07/13/09/46/basketball-155997_960_720.png',
     desc: 'Sports fans will love our huge selection of basketball games. You can play quick arcade challenges or in-depth simulation challenges. Choose your favorite court, pick a player, and get ready to shoot some hoops! Our collection puts you in control of star NBA players, streetball athletes, and newbies. You’ll be challenged to make 3-pointers, score huge slam dunks, and beat your opponents in 4 quarters. Exciting sports challenges are waiting for you!',
 
     longDesc:
@@ -27,7 +23,7 @@ export const posts = [
     id: 1,
     title:
       'Sports fans will love our huge selection of basketball games. You can play quick arcade challenges or in-depth simulation challenges.',
-    img: { basketball02 },
+    img: 'https://cdn.pixabay.com/photo/2013/03/21/15/52/basketball-95607_960_720.jpg',
     desc: 'Sports fans will love our huge selection of basketball games. You can play quick arcade challenges or in-depth simulation challenges. Choose your favorite court, pick a player, and get ready to shoot some hoops! Our collection puts you in control of star NBA players, streetball athletes, and newbies. You’ll be challenged to make 3-pointers, score huge slam dunks, and beat your opponents in 4 quarters. Exciting sports challenges are waiting for you!',
 
     longDesc:
