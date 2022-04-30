@@ -83,3 +83,98 @@
   font-size: 18px;
   line-height: 24px;
 }
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 60%;
+  height: 75%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.left,
+.right {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+.center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.or {
+  border: 3px solid rgb(121, 113, 113);
+  border-radius: 50%;
+  padding: 10px;
+  color: gray;
+  background-color: white;
+}
+.line {
+  width: 0.5px;
+  height: 50%;
+  background-color: lightgray;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+.loginButton {
+  width: 150px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: bold;
+  margin-bottom: 20px;
+}
+.google {
+  background-color: rgb(221, 3, 3);
+}
+.facebook {
+  background-color: rgba(15, 114, 242, 0.882);
+}
+
+.github {
+  background-color: rgb(18, 1, 1);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+input {
+  width: 200px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+}
+.submit {
+  width: 200px;
+  background-color: darkcyan;
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-left: 80px;
+}
+.loginTitle {
+  position: absolute;
+  top: 150px;
+  color: lightgray;
+}
