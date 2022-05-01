@@ -9,3 +9,7 @@ yarn add express passport cors nodemon cookie-session
 node index.js or yarn start or npm start
 
 3. Here we need to create a clientID and Client secret through google
+
+# Github auth configuration for
+
+1. yarn add passport-github2

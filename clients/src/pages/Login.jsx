@@ -1,11 +1,15 @@
 import React from 'react';
-import facebook from '../asset/imagesSocial/facebook.png';
-import github from '../asset/imagesSocial/github.png';
+import facebookIcon from '../asset/imagesSocial/facebook.png';
+import githubIcon from '../asset/imagesSocial/github.png';
 import googleIcon from '../asset/imagesSocial/google.png';
 
 const Login = () => {
   const google = () => {
     window.open('http://localhost:5000/auth/google/', '_self');
+  };
+
+  const github = () => {
+    window.open('http://localhost:5000/auth/github/', '_self');
   };
 
   return (
@@ -20,12 +24,12 @@ const Login = () => {
           </div>
 
           <div className='loginButton facebook'>
-            <img src={facebook} alt='' className='icon' />
+            <img src={facebookIcon} alt='' className='icon' />
             Facebook
           </div>
 
-          <div className='loginButton github'>
-            <img src={github} alt='' className='icon' />
+          <div className='loginButton github' onClick={github}>
+            <img src={githubIcon} alt='' className='icon' />
             Github
           </div>
         </div>
