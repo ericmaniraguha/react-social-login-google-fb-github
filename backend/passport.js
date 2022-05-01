@@ -1,13 +1,17 @@
 require('dotenv').config();
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const GithubStrategy = require('passport-github-oauth20').Strategy;
+const GithubStrategy = require('passport-github2').Strategy;
+const FacebookStrategy = require('passport-facebook').Strategy;
 const passport = require('passport');
 
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
 
-const GITHUB_SERVER_ID = process.env.GITHUB_CLIENT_ID;
+const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
+
+const FACEBOOK_APP_ID = process.env.FACEBOOK_APP_ID;
+const FACEBOOK_APP_SECRET = process.env.FACEBOOK_APP_SECRET;
 
 // GOOGLE
 passport.use(
@@ -24,13 +28,25 @@ passport.use(
 );
 
 //GITHUB
-
 passport.use(
   new GithubStrategy(
     {
-      clientID: GITHUB_SERVER_ID,
+      clientID: GITHUB_CLIENT_ID,
       clientSecret: GITHUB_CLIENT_SECRET,
       callbackURL: '/auth/github/callback',
+    },
+    function (accessToken, refreshToken, profile, done) {
+      done(null, profile);
+    }
+  )
+);
+//facebook
+passport.use(
+  new FacebookStrategy(
+    {
+      clientID: FACEBOOK_APP_ID,
+      clientSecret: FACEBOOK_APP_SECRET,
+      callbackURL: '/auth/facebook/callback',
     },
     function (accessToken, refreshToken, profile, done) {
       done(null, profile);

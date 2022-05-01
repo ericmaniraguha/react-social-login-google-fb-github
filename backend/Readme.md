@@ -10,6 +10,7 @@ node index.js or yarn start or npm start
 
 3. Here we need to create a clientID and Client secret through google
 
-# Github auth configuration for
+# Github and facebook auth configuration for
 
 1. yarn add passport-github2
+2. yarn add passport-facebook
